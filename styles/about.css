@@ -93,8 +93,8 @@
 .tags p{
     padding: 5px 20px;
     background: var(--primary-color);
-    margin-right: 30px;
-    margin-bottom: 30px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
     border-radius: 5px;
 
 }
@@ -104,8 +104,11 @@
 /* tab view */
 
 @media (max-width: 996px){
+    .about-section{
+        overflow: hidden;
+    }
     .container{
-        padding: 20px;
+        padding: 30px;
     }
     .about-info{
         flex-wrap: wrap;
@@ -119,5 +122,14 @@
     }
     .right-info{
         width: 100%;
+    }
+    .right-info p{
+        padding: 0;
+    }
+}
+
+@media (max-width: 500px){
+    .img-container .img{
+        width: auto;
     }
 }

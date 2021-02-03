@@ -42,7 +42,6 @@
 
 .form{
     width: 60%;
-    min-height: 500px;
     height: auto;
     background: var(--secondary-color);
     padding: 30px;
@@ -94,5 +93,50 @@
     border: none;
     background: var(--dark-color);
     cursor: pointer;
+    color: var(--black-color);
     text-transform: capitalize;
+}
+
+.copyright{
+    background: var(--black-color);
+    color: var(--primary-color);
+    text-align: center;
+    text-transform: capitalize;
+    width: 100%;
+    padding: 5px 0;
+}
+
+.copyright::selection{
+    background: var(--primary-color);
+    color: var(--black-color);
+}
+
+/* media query */
+
+/* tab view */
+
+@media (max-width: 996px){
+    .contact-section{
+        padding: 0 10vw;
+    }
+    .contact-wrapper{
+        width: 60%;
+        min-width: 300px;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        margin: 10px;
+    }
+    .contact-details{
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 20px;
+    }
+    .form{
+        width: 100%;
+        border-bottom-right-radius: 0;
+    }
+    .submit-btn{
+        box-shadow: 0 0 1px 5px var(--secondary-color);
+    }
 }

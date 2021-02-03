@@ -45,6 +45,36 @@
     border-color: var(--black-color);
 }
 
+.toggle-btn{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 10vw;
+    top: 0;
+    cursor: pointer;
+    display: none;
+}
+
+.toggle-btn span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    height: 2px;
+    transform: translate(-50%, -50%);
+    background: var(--black-color);
+    transition: .5s;
+    transform-origin: center;
+}
+
+.toggle-btn span:first-child{
+    top: 30%
+}
+
+.toggle-btn span:last-child{
+    top: 70%
+}
+
 /* header section */
 
 .home-section{
@@ -174,7 +204,51 @@
 /* tab view */
 
 @media (max-width: 996px){
+
+    /* navbar */
+    .navbar{
+        position: sticky;
+        flex-wrap: wrap;
+        height: auto;
+        background: var(--primary-color) !important;
+        justify-content: start;
+        box-shadow: 0 0 10px var(--element-overlay-color);
+    }
+    .nav-links-container{
+        width: 100%;
+        display: none;
+        padding: 10px 0;
+    }
+    .nav-links-container.active{
+        display: block;
+    }
+    .nav-item{
+        margin: 0 !important;
+        padding: 10px 0;
+    }
+    .link{
+        display: block;
+    }
+    .toggle-btn{
+        display: block;
+    }
+    .toggle-btn.active span:first-child{
+        top: 50%;
+        transform: translate(-50%,-50%) rotate(45deg);
+    }
+    .toggle-btn.active span:last-child{
+        top: 50%;
+        transform: translate(-50%,-50%) rotate(-45deg);
+    }
+    .toggle-btn.active span:nth-child(2){
+        opacity: 0;
+    }
+
+    /* home section */
+
     .home-section{
+        width: 100vw;
+        margin-top: 0;
         padding: 50px 10vw;
         flex-direction: column-reverse;
     }
@@ -195,6 +269,9 @@
         text-align: center;
         margin: 20px auto;
     }
+    .home-section .right-div{
+        width: 100%;
+    }
     .right-div .image {
         width: 250px;
         height: 350px;
@@ -204,6 +281,8 @@
     }
     .top-right-element{
         top: -40%;
+        width: 50vw;
+        right: 0;
     }
     .bottom-left-element{
         width: 100vw;

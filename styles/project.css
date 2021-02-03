@@ -36,21 +36,9 @@
 .info{
     width: 80%;
     text-align: justify;
-    max-height: 8.5rem;
     overflow: hidden;
     position: relative;
     font-weight: 500;
-}
-
-.info a{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background-color: var(--primary-color);
-    padding-left: 1.5rem;
-    text-decoration: none;
-    color: var(--black-color);
-    text-transform: capitalize;
 }
 
 .project-section .btn{

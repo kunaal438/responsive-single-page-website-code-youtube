@@ -25,7 +25,8 @@
     /* dark theme */
     
     /* --primary-color: rgb(0, 0, 0);
-    --secondary-color: rgb(185, 15, 15);
+    --secondary-color: rgb(221, 15, 0);
+    --dark-color: rgb(255, 57, 7);
     --black-color: rgb(255, 255, 255);
     --element-overlay-color: rgba(0, 0, 0, 0.1); */
 }
@@ -68,4 +69,20 @@ body{
 .copyright::selection{
     background: var(--primary-color);
     color: var(--black-color);
+}
+
+/* tab view */
+
+@media (max-width: 996px){
+    html{
+        font-size: 14px;
+    }
+}
+
+/* phone view */
+
+@media (max-width: 500px){
+    html{
+        font-size: 13px;
+    }
 }
