@@ -1,0 +1,123 @@
+.about-section{
+    width: 100%;
+    min-height: 120vh;
+    height: auto;
+    position: relative;
+    padding: 30px 10vw;
+    background: var(--secondary-color);
+}
+
+.about-section::before{
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 70px;
+    background: var(--primary-color);
+    bottom: 0;
+    left: -10%;
+    transform: skewX(-25deg);
+    z-index: 1;
+}
+
+.about-section::after{
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 70px;
+    background: var(--primary-color);
+    top: 0;
+    right: -10%;
+    transform: skewX(-25deg);
+    z-index: 1;
+}
+
+.container{
+    border: 2px solid var(--black-color);
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    padding: 50px;
+}
+
+.about-title{
+    text-align: center;
+    text-transform: capitalize;
+    margin: 10px 0;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.about-info{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.img-container{
+    width: 40%;
+}
+
+.img-container .img{
+    width: 300px;
+    height: 400px;
+    background-image: url(../img/about-img.jpeg);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+}
+
+.right-info{
+    width: 60%;
+    color: var(--black-color);
+}
+
+.right-info p{
+    font-weight: 500;
+    padding: 20px;
+    text-align: justify;
+}
+
+.technique{
+    text-transform: capitalize;
+    margin: 40px 0;
+    font-size: 1.7rem;
+}
+
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tags p{
+    padding: 5px 20px;
+    background: var(--primary-color);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+
+}
+
+/* media query */
+
+/* tab view */
+
+@media (max-width: 996px){
+    .container{
+        padding: 20px;
+    }
+    .about-info{
+        flex-wrap: wrap;
+    }
+    .img-container{
+        width: 100%;
+        padding: 20px 0;
+    }
+    .img-container .img{
+        margin: auto;
+    }
+    .right-info{
+        width: 100%;
+    }
+}

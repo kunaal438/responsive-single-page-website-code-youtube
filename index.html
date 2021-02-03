@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page Website</title>
+
+    <!-- font-awesome cdn and google font cdn -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <!-- local stylesheets -->
+    <link rel="stylesheet" href="styles/main.css">
+
+</head>
+<body>
+    
+    <!-- navbar -->
+    <nav class="navbar">
+        <h2 class="brand">logo</h2>
+        <ul class="nav-links-container">
+            <li class="nav-item">
+                <a href="#home" class="link active">home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#project" class="link">project</a>
+            </li>
+            <li class="nav-item">
+                <a href="#about" class="link">about</a>
+            </li>
+            <li class="nav-item">
+                <a href="#testimonial" class="link">testimonial</a>
+            </li>
+            <li class="nav-item">
+                <a href="#contact" class="link">contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- header -->
+    <header class="home-section" id="home">
+        <span class="top-right-element"></span>
+        <span class="bottom-left-element"></span>
+        <div class="left-div">
+            <h1>heading..</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro totam quod sequi natus, ipsam optio alias aliquid? Nulla, atque voluptate!</p>
+            <a href="#project" class="btn">explore</a>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="right-div">
+            <div class="image"></div> 
+            <!-- we use div tag instead of image tag and give backgroung image to the div becaue img does not support pusedo (before, after) elements and we need before element to make the circle in the bottom right corner -->
+        </div>
+
+        <img src="img/down-arrow.png" id="project" class="scroll-down-image" alt="scroll down">
+    </header>
+
+    <!-- project section -->
+
+    <section class="project-section">
+        <div class="project-content">
+            <h1 class="project-heading">Projects</h1>
+            <p class="sub-title">shows my efforts and dedication</p>
+
+            <p class="title">Project title</p>
+            <p class="info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui rerum explicabo assumenda, culpa, accusamus inventore, id unde consequatur deserunt atque similique. Impedit neque fugit voluptates delectus alias. Animi cupiditate necessitatibus, dolorum quos recusandae libero eum ut eveniet quas ex nisi, exercitationem corrupti molestias consectetur, ab fugiat quisquam? Ipsa inventore dolor corporis quas cumque, blanditiis repellat recusandae earum, maxime quo id.<a href="#">...read more</a>
+            </p>
+
+            <button class="btn pre"><i class="fas fa-arrow-left"></i>previous</button>
+            <button class="btn nxt">next<i class="fas fa-arrow-right"></i></button>
+        </div>
+        <div class="project-thumb">
+
+            <!-- img -->
+            <img src="img/project-thumb.jpeg" class="project-img" alt="">
+
+            <!-- spans for side elements for image  -->
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+
+        <span class="project-index">01</span>
+
+    </section>
+
+    <!-- about section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <h1 class="about-title">about me</h1>
+            <div class="about-info">
+                <div class="img-container">
+                    <div class="img"></div>
+                </div>
+                <div class="right-info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus reprehenderit in consectetur suscipit laboriosam earum aliquam optio delectus provident modi autem perspiciatis, facere, recusandae quis, id quos aspernatur quo quod ipsa sed ex iure natus minus officia. Consectetur nulla placeat soluta, facere itaque voluptates nam! Laudantium placeat, iusto reiciendis libero quos atque magnam ipsam totam tempore impedit quibusdam repellendus est facilis labore quia! Tempora fugiat sunt expedita consequuntur a. Sunt aliquam porro enim quis eos? Deserunt, delectus labore ab iure hic error quo omnis, officiis maiores itaque quasi natus ea. Perferendis quo, tempora impedit earum velit error maxime dolores fugiat non repudiandae laudantium commodi. Vel et beatae harum aut provident. Mollitia assumenda id inventore voluptatum at, neque consequatur fugit molestias ipsum nulla velit dicta explicabo dolorem laborum ad accusantium? Recusandae nisi praesentium at consequatur. Alias, voluptatibus ullam? Culpa, quos earum distinctio magni est doloribus dolore labore aspernatur a expedita at delectus cupiditate nulla dicta eum, iste dolorum inventore, nisi voluptatum? Incidunt voluptates fugiat provident harum in. Quis amet a sit!</p>
+                </div>
+            </div>
+            <h3 class="technique">technique and languages i use</h3>
+            <div class="tags">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+                <p>React JS</p>
+                <p>Node JS</p>
+                <p>SCSS</p>
+                <p>More</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- testimonials section -->
+    <section class="client-section" id="testimonial">
+        <h2 class="heading">what client say's about me</h2>
+        <div class="review-container">
+            <div class="card">
+                <div class="card-body" data-client-name="- client">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi odit beatae dicta obcaecati, laudantium facere aliquid hic totam voluptate. Voluptatum.
+                </div>
+                <img src="img/client-1.png" class="card-img" alt="client">
+            </div>
+            <div class="card">
+                <div class="card-body" data-client-name="- client">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi odit beatae dicta obcaecati, laudantium facere aliquid hic totam voluptate. Voluptatum.
+                </div>
+                <img src="img/client-2.jpg" class="card-img" alt="client">
+            </div>
+            <div class="card">
+                <div class="card-body" data-client-name="- client">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi odit beatae dicta obcaecati, laudantium facere aliquid hic totam voluptate. Voluptatum.
+                </div>
+                <img src="img/client-3.png" class="card-img" alt="client">
+            </div>
+            <div class="card">
+                <div class="card-body" data-client-name="- client">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi odit beatae dicta obcaecati, laudantium facere aliquid hic totam voluptate. Voluptatum.
+                </div>
+                <img src="img/client-1.png" class="card-img" alt="client">
+            </div>
+            <div class="card">
+                <div class="card-body" data-client-name="- client">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi odit beatae dicta obcaecati, laudantium facere aliquid hic totam voluptate. Voluptatum.
+                </div>
+                <img src="img/client-2.jpg" class="card-img" alt="client">
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="contact-section" id="contact">
+        <h2 class="heading">contact me</h2>
+        <div class="contact-wrapper">
+            <div class="contact-details">
+                <p>address <span>city, state, pin code</span><span>country</span></p>
+                <p>contact number <span>+00 000 000 0000,</span> <span>+00 000 000 0000</span></p>
+                <p>e-mails <span>example@domain.com,</span> <span>example@domain.com</span></p>
+            </div>
+            <form class="form">
+                <label for="name">name</label>
+                <input type="text" autocomplete="off" id="name" required>
+                <label for="email">e-mail</label>
+                <input type="email" autocomplete="off" id="email" required>
+                <label for="msg">message</label>
+                <textarea id="message" autocomplete="off"></textarea>
+                <button class="submit-btn" type="submit">contact</button>
+            </form>
+        </div>
+    </section>
+
+    <p class="copyright">@coyright all right reserved</p>
+
+    <script src="js/app.js"></script>
+    
+</body>
+</html>

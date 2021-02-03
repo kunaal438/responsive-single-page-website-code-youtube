@@ -1,0 +1,168 @@
+.project-section{
+    width: 100%;
+    min-height: 80vh;
+    height: auto;
+    display: flex;
+    padding: 50px 10vw;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.project-content{
+    width: 50%;
+    height: 100%;
+    color: var(--black-color);
+    position: relative;
+}
+
+.project-content .project-heading{
+    text-transform: capitalize;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.sub-title{
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.title{
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+
+.info{
+    width: 80%;
+    text-align: justify;
+    max-height: 8.5rem;
+    overflow: hidden;
+    position: relative;
+    font-weight: 500;
+}
+
+.info a{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: var(--primary-color);
+    padding-left: 1.5rem;
+    text-decoration: none;
+    color: var(--black-color);
+    text-transform: capitalize;
+}
+
+.project-section .btn{
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    margin: auto;
+    bottom: -20%;
+    padding: 10px;
+}
+
+.project-section .btn i{
+    margin: 0 10px;
+    transition: margin .5s;
+}
+
+.project-section .btn:hover{
+    border: none;
+    background: var(--black-color);
+}
+
+.btn.pre{
+    left: 0;
+    padding-right: 20px;
+}
+
+.btn.nxt{
+    right: 20%;
+    padding-left: 20px;
+}
+
+.project-thumb{
+    width: 50%;
+    background: #000;
+    position: relative;
+}
+
+.project-thumb span{
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    background: var(--primary-color);
+    transform: rotate(45deg);
+}
+
+.project-thumb span:nth-child(2){
+    top: 15%;
+}
+
+
+.project-thumb span:nth-child(3){
+    top: 30%;
+}
+
+.project-thumb span:nth-child(4){
+    top: 45%;
+}
+
+.project-thumb span:nth-child(5){
+    top: 60%;
+}
+
+.project-thumb span:nth-child(6){
+    top: 75%;
+}
+
+.project-thumb span:nth-child(7){
+    top: 90%;
+}
+
+.project-thumb .project-img{
+    height: 100%;
+    width: 100%;
+}
+
+.project-index{
+    font-size: 7rem;
+    position: absolute;
+    font-weight: 900;
+    bottom: 0;
+    right: 5%;
+    user-select: none;
+    color: transparent;
+    -webkit-text-stroke: 4px var(--black-color);
+}
+
+/* media query */
+
+/* tab view */
+
+@media (max-width: 996px){
+    .project-section{
+        padding: 0 10vw;
+        flex-wrap: wrap;
+    }
+    .project-content, .project-thumb{
+        width: 100%;
+    }
+    .project-content{
+        margin-bottom: 100px;
+    }
+    .project-content .info{
+        width: 100%;
+    }
+    .btn.nxt{
+        right: 0;
+    }
+    .project-index{
+        bottom: -5%;
+        right: 10vw;
+    }
+}
